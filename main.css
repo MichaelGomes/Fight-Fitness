@@ -48,3 +48,34 @@ li a {
   text-decoration: none;
   color: white;
 }
+
+@media only screen and (min-width: 636px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  header ul {
+    display: none;
+  }
+  .menu {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    padding: 0.5em 1em 0 0;
+  }
+}
+
+.menu-click header {
+  height: 16em;
+  transition: height 2s;
+}
+
+.menu-click ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  margin-right: auto;
+}
