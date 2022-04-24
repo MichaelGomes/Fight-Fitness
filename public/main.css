@@ -479,3 +479,23 @@ footer ul {
 footer li {
   margin: auto;
 }
+
+/*-----------------------------SUCCESS & FAILURE PAGES---------------------------------------*/
+
+.post {
+  color: black;
+  background-color: #d3d3d3;
+}
+
+.post h1 {
+  font-size: 40px;
+}
+
+.post button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #17a2b8;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
