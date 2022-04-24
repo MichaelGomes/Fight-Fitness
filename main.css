@@ -291,3 +291,77 @@ cite {
     bottom: 130px;
   }
 }
+/*-----------------------------NEWSLETTER---------------------------------------*/
+
+#newsletter {
+  background-color: black;
+  height: 100vh;
+  min-height: 300px;
+  padding-top: 10px;
+}
+
+#newsletter img {
+  width: 400px;
+  z-index: 1;
+  position: absolute;
+}
+
+.boxer-right {
+  right: 0px;
+  transform: scaleX(-1);
+}
+
+.news-wrapper {
+  background-color: #332e2e;
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  max-width: 650px;
+  min-width: 250px;
+  margin: 150px auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+.news-wrapper p {
+  position: relative;
+  right: 60px;
+}
+
+.news-wrapper h1 {
+  font-size: 1.5em;
+}
+
+.news-button {
+  background-color: #707070;
+  color: white;
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*-----------------------------NEWSLETTER RESPONSIVENESS---------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+  .boxer-right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .inputs {
+    display: flex;
+  }
+  .input-1 {
+    margin: auto 40px 20px auto;
+  }
+  .input-2 {
+    margin: auto auto 20px 40px;
+  }
+}
