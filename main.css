@@ -296,7 +296,7 @@ cite {
 #newsletter {
   background-color: black;
   height: 100vh;
-  min-height: 300px;
+  min-height: 625px;
   padding-top: 10px;
 }
 
@@ -363,5 +363,104 @@ cite {
   }
   .input-2 {
     margin: auto auto 20px 40px;
+  }
+}
+
+/*-----------------------------CONTACT---------------------------------------*/
+
+#contact {
+  background-color: #161616;
+  height: 150vh;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.contact-form {
+  background-color: white;
+  color: black;
+  width: 80%;
+  max-width: 650px;
+  min-width: 250px;
+  margin: 150px auto;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: "Montserrat";
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.message {
+  resize: none;
+}
+
+.contact-input {
+  font-family: inherit;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.full-name {
+  display: flex;
+  margin: auto;
+}
+
+.fName {
+  font-family: inherit;
+  width: 44%;
+  margin: auto 1% auto auto;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.lName {
+  font-family: inherit;
+  width: 44%;
+  margin: auto auto auto 1%;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.btn-send {
+  font-family: inherit;
+  background-color: white;
+  color: #c60000;
+  border: 1px solid #c60000;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.bg-bar {
+  z-index: 1;
+  height: 200px;
+  width: 100%;
+  background-color: #332e2e;
+  position: relative;
+  bottom: 500px;
+}
+
+/*-----------------------------CONTACT RESPONSIVENESS---------------------------------------*/
+
+@media only screen and (max-width: 635px) {
+  .fName,
+  .lName {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .full-name {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 636px) {
+  .fName,
+  .lName,
+  .contact-input {
+    font-size: 16px;
   }
 }
