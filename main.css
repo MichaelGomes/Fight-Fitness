@@ -10,9 +10,10 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  margin: auto;
 }
 
-/*-----------------------------HEADER SECTION---------------------------------------*/
+/*-----------------------------HEADER---------------------------------------*/
 header {
   background-image: linear-gradient(#2a2828, #767676);
 }
@@ -50,6 +51,8 @@ li a {
   color: white;
 }
 
+/*-----------------------------HEADER RESPONSIVENESS-------------------------------*/
+
 @media only screen and (min-width: 636px) {
   .menu {
     display: none;
@@ -67,6 +70,8 @@ li a {
     padding: 0.5em 1em 0 0;
   }
 }
+
+/*-----------------------------HAMBURGER TOGGLE---------------------------------------*/
 
 .menu-click header {
   height: 16em;
@@ -153,6 +158,8 @@ li a {
   background-color: #ffa0a0;
 }
 
+/*-----------------------------LANDING SECTION RESPONSIVENESS---------------------------------------*/
+
 @media only screen and (min-width: 636px) {
   .wrapper-landing {
     width: 30em;
@@ -178,5 +185,109 @@ li a {
   }
   .wrapper-landing .apple {
     margin-left: -80px;
+  }
+}
+
+/*-----------------------------TESTIMONIALS---------------------------------------*/
+
+#testimonials {
+  background-color: #7a0000;
+  height: 100vh;
+  margin-top: -20px;
+}
+
+.testimonials {
+  margin: auto;
+}
+
+.stats-wrapper {
+  padding: 1.5em;
+  margin: 0 auto;
+}
+
+.stats {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  justify-content: space-around;
+}
+
+strong {
+  font-size: 3em;
+}
+
+li span {
+  display: block;
+}
+
+/*-----------------------------CAROUSEL---------------------------------------*/
+
+.carousel {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 80%;
+  margin: 25px auto;
+  min-height: 100px;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.arrow {
+  width: 150px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.left {
+  transform: rotateZ(180deg);
+}
+
+.left:hover {
+  transform: scale(1.2) rotateZ(180deg);
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+}
+
+blockquote {
+  font-size: 18px;
+}
+
+cite {
+  position: relative;
+  left: 50px;
+}
+
+/*-----------------------------TESTIMONIALS RESPONSIVENESS---------------------------------------*/
+
+@media only screen and (max-width: 635px) {
+  .stats-wrapper {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 636px) {
+  .stats li {
+    border-right: 2px solid;
+  }
+  .stats li:last-child {
+    border: 0;
+  }
+  .carousel {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .arrows {
+    position: relative;
+    bottom: 130px;
   }
 }
