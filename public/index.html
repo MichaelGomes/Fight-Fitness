@@ -116,15 +116,15 @@
       </section>
       <section id="contact">
         <div class="contact-wrapper">
-          <form class="contact-form" action="/contact" method="post">
+          <form class="contact-form" action="https://formspree.io/f/xzbojjen" method="POST">
             <h2>Get In Touch</h2>
-            <textarea class="message contact-input" name="Message" rows="6" placeholder="Enter a Message"></textarea>
+            <textarea class="message contact-input" name="message" rows="6" placeholder="Enter a Message" required></textarea>
             <div class="full-name">
-              <input class="fName" type="text" name="" placeholder="Enter First Name">
-              <input class="lName" type="text" name="" placeholder="Enter Last Name">
+              <input class="fName" type="text" name="fname" placeholder="Enter First Name" required>
+              <input class="lName" type="text" name="lname" placeholder="Enter Last Name" required>
             </div>
-            <input class="contact-input" type="email" name="email" placeholder="Enter Email">
-            <input class="contact-input" type="text" name="subject" placeholder="Enter Subject">
+            <input class="contact-input" type="email" name="email" placeholder="Enter Email" required>
+            <input class="contact-input" type="text" name="subject" placeholder="Enter Subject" required>
             <button class="btn-send" type="submit" name="button">Send</button>
           </form>
           <div class="bg-bar"></div>
